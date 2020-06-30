@@ -1,13 +1,12 @@
-# contador_de_pessoas
+# contador_flutter
 
-A new Flutter project.
+A new Basic Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+My first App Basic in Flutter
 
 <p align="center">
   <img src="images/Simulator.png" width="350" title="hover text">
-  <img src="images/Simulator.png" width="350" alt="accessibility text">
 </p>
 
