@@ -6,5 +6,8 @@ A new Flutter project.
 
 This project is a starting point for a Flutter application.
 
-<img src="images/Simulator.png" alt="My cool app"/>
+<p align="center">
+  <img src="images/Simulator.png" width="350" title="hover text">
+  <img src="images/Simulator.png" width="350" alt="accessibility text">
+</p>
 
