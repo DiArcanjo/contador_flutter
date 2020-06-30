@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 
 main() {
-  runApp(MaterialApp(home: Home()));
+  runApp(MaterialApp(
+      home: Container(
+    child: Home(),
+  )));
 }
 
 class Home extends StatefulWidget {
@@ -12,13 +15,15 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   int _like = 0;
   int _dislike = 0;
-  String _infoText = "É TOP!";
+  String _infoText = "COMEÇAR!";
 
   void _likePeople(int numero) {
     setState(() {
       _like += numero;
       if (_like > _dislike) {
         _infoText = "FLUTTER É BÃO!!";
+      } else if (_like == _dislike) {
+        _infoText = "EMPATOU!";
       }
     });
   }
@@ -27,7 +32,9 @@ class _HomeState extends State<Home> {
     setState(() {
       _dislike += numero;
       if (_dislike > _like) {
-        _infoText = "VISH PERDEU!!!";
+        _infoText = "VISH!!!";
+      } else if (_dislike == _like) {
+        _infoText = "EMPATOU!";
       }
     });
   }
@@ -45,7 +52,7 @@ class _HomeState extends State<Home> {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget>[
             Align(
-              child: Text("Flutter é bom?",
+              child: Text("Flutter é bom? ",
                   style: TextStyle(
                       color: Colors.white,
                       fontStyle: FontStyle.italic,
